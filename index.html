@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Profesor</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Profesor</h1>
+        <h2>Datos Profesor</h2>
+        <div class="form-group">
+            <label>Cedula</label>
+            <p><input type="text" id="cedula"></p>
+        </div>
+        <div class="form-group">
+            <label>Nombre</label>
+            <p><input type="text" id="nombre"></p>
+        </div>
+        <div class="form-group">
+            <label>Apellido</label>
+            <p><input type="text" id="apellido"></p>
+        </div>
+        <div class="center">
+            <button id="guardar" onclick="guardarAtributos()">Guardar</button>
+        </div>
+        <p class="error" id="form-error"></p>
+        <h2>JSON</h2>
+        <div class="form-group">
+            <p type="JSON: "><textarea id="json-input" rows="5"></textarea></p>
+        </div>
+        <div class="center">
+            <button id="json" onclick="convertirAFormulario()">JSON</button>
+        </div>
+        <p class="error" id="json-error"></p>
+    </div>
+</body>
+</html>
